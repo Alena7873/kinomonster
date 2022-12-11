@@ -105,10 +105,11 @@ margin-right: auto;
     text-decoration: none;
 }
 
+/*текст кино наша пристрасть*/
 .logo_text h2 {
     font-size: 0.9em;
     padding: 4px 0 0 0;
-    color: #999;
+    color: blue;
 }
 
 .menubar {
@@ -131,7 +132,7 @@ ul.menu li a {
     font: normal 100% 'trebuchet ms', sans-serif;
     display: block;
     height: 20px;
-    padding: 6px 35px 5px 28px;
+    padding: 4px 7px 5px 28px;
     color: #fff;
     text-decoration: none;
 }
@@ -225,8 +226,7 @@ hr {
     width: 620px;
     padding: 0 0 0 5px;
     float: left;
-    background-color: #3c3c60ed;
-    border-radius: 5px;
+
 }
 
 .Popyl {
@@ -262,7 +262,7 @@ hr {
 
 .info_film_page .value {
     font-size: 1em;
-    color: #49945A;
+    color: #1cf84f;
     margin-right: 3%;
 }
 
@@ -308,7 +308,7 @@ hr {
 
 /*текст средина*/
 .text-container {
-    color: #5d5d5d;
+    color: #333232;
 }
 
 .reviews {
@@ -316,8 +316,9 @@ hr {
     font-size: 0.9em;
 }
 
+/*коментарии*/
 .reviews .review_name {
-    background-color: #7268AD;
+    background-color: blue;
     color: white;
     padding: 1%;
     border-top-left-radius: 5px;
@@ -349,8 +350,9 @@ textarea {
     height: 200px;
 }
 
+/*кнопка відправити*/
 .send input[type="submit"] {
-    background-color: #7268AD;
+    background-color: blue;
     padding: 3%;
     color: white;
     border-radius: 5px;
@@ -436,67 +438,106 @@ h3 {
 /*фильм контент*/
 
 /*footer*/
-#footer-site {
 
-    text-align: center;
-    color: blue;
-    align-content: space-between;
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-
+* {
+    margin: 0;
+    /*обнуление отступов*/
+    padding: 0;
+    /*обнуление полей*/
+    box-sizing: border-box;
+    /*метод расчета размеров бокса*/
+    font-family: 'Poppins', sans-serif;
+    /*название шрифта*/
 }
 
 
-
-
-
-.footer {
+footer {
+    position: relative;
+    /*относительное позиционирование*/
+    width: 100%;
+    /*на всю ширину*/
+    padding: 20px 50px;
+    /*поля для контента*/
+    background: black;
+    /*цвет футера*/
     display: flex;
     justify-content: center;
-    padding: 17px;
-    color: rgb(67, 65, 65);
-    max-height: 20em;
-
-
+    /*в центре по горизонтали*/
+    align-items: center;
+    /*в центре по вертикали*/
+    flex-direction: column;
+    margin-top: 100px;
+    /*отступ сверху*/
 }
 
-a:hover {
-    color: blue;
-}
-
-
-
-.widget-social {
-    min-width: 1357px;
+footer .wave {
+    position: absolute;
+    /*абсолютное позиционирование*/
+    top: -100px;
+    left: 0;
     width: 100%;
-    height: 46px;
-    margin-top: -20px;
-    font-size: 20px;
-    color: blue;
-
-
+    height: 100px;
+    background: url(wave.png);
+    /*картинка волны*/
+    background-size: 1000px 100px;
+    /*ширина и высота волны*/
 }
 
+.social,
+.menu2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    /*разрешен перенос на новую строку*/
+}
 
-
-.footer-social li p {
+.social li,
+.menu2 li {
     list-style: none;
+    /*удалить черные маркеры*/
+}
+
+.social li a {
+    font-size: 2em;
+    /*размер иконок*/
+    color: #fff;
+    /*цвет иконок*/
+    margin: 0 10px;
     display: inline-block;
-    margin-right: 10px;
-
+    /*отображать как строчно-блочный элемент*/
+    transition: 0.5s;
+    /*плавный переход*/
 }
 
-
-
-
-
-.footer li {
-    padding: 0 0 10px 0;
-
-
+.menu2 li a {
+    font-size: 1.2em;
+    /*размер ссылок меню*/
+    color: #fff;
+    /*цвет ссылок меню*/
+    opacity: 0.75;
+    /*значение прозрачности*/
+    margin: 0 15px;
+    text-decoration: none;
+    /*ссылка без подчеркивания*/
+    display: inline-block;
 }
 
+.menu2 li a:hover {
+    opacity: 1;
+    color: blue;
+}
 
-
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
 
 /* CSS Mobile */
 
