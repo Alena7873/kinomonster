@@ -456,7 +456,7 @@ h3 {
 footer {
     position: relative;
     /*относительное позиционирование*/
-    width: 100%;
+    width: 865px;
     /*на всю ширину*/
     padding: 20px 50px;
     /*поля для контента*/
@@ -470,6 +470,7 @@ footer {
     flex-direction: column;
     margin-top: 100px;
     /*отступ сверху*/
+    border-radius: 5px;
 }
 
 footer .wave {
