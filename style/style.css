@@ -1,10 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+<style>@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=EB+Garamond:wght@400;600;700&family=Montserrat:wght@400;500;600&display=swap');
 
-body {
-    font-size: 1.2em;
+</style>body {
+    font-size: 16px;
     background-color: #fff;
     color: rgb(28 28 28 / 90%);
 }
@@ -12,12 +9,35 @@ body {
 html,
 body {
     height: 100%;
+
 }
 
-p {
-    padding: 0 0 20px 0;
-    line-height: 1.7em;
+a {
+    text-decoration: none;
 }
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: 0;
+
+}
+
+h1,
+h2,
+h3,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
 
 /*текст вхід*/
 input[type="text"],
@@ -53,7 +73,7 @@ a,
 a:hover {
     outline: none;
     text-decoration: underline;
-    color: #333332;
+    color: #0f1010d9;
 }
 
 ul {
@@ -68,8 +88,8 @@ ul li {
 
 /*верх*/
 .header {
-    background-color: #1b1a1c;
-    height: 177px;
+    background: url(../kar_img/Serze.jpg);
+    height: 220px;
     font-size: 0.8em;
     margin-left: 0px;
     margin-right: 0px;
@@ -86,7 +106,6 @@ margin-right: auto;
 }
 
 .logo {
-    width: 880px;
     padding-bottom: 40px;
 }
 
@@ -99,7 +118,6 @@ margin-right: auto;
 .logo_text h1,
 .logo_text h1 a,
 .logo_text h1 a:hover {
-    padding: 22px 0 0 0;
     color: #fcfbfbed;
     letter-spacing: 0.1em;
     text-decoration: none;
@@ -109,12 +127,12 @@ margin-right: auto;
 .logo_text h2 {
     font-size: 0.9em;
     padding: 4px 0 0 0;
-    color: blue;
+    color: rgb(13, 34, 174)179, 255, 0);
 }
 
 .menubar {
-    width: 900px;
-    height: 46px;
+    width: 911px;
+    height: 83px;
 }
 
 ul.menu {
@@ -128,12 +146,13 @@ ul.menu li {
     margin: 1px 2px 0 0;
 }
 
+/*головна фільми*/
 ul.menu li a {
     font: normal 100% 'trebuchet ms', sans-serif;
     display: block;
     height: 20px;
     padding: 4px 7px 5px 28px;
-    color: #fff;
+    color: rgb(49, 55, 4);
     text-decoration: none;
 }
 
@@ -160,13 +179,22 @@ hr {
     background-color: white;
 }
 
-.reFilms {
-    color: blue;
+.before {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    content: attr(data-label);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #e4ec04;
+    border
 }
+
+/*рейтинг фільмів*/
 
 .sidebar_container {
     float: right;
-    ;
     width: 224px;
 }
 
@@ -187,7 +215,7 @@ hr {
 }
 
 .sidebar h2 {
-    color: blue;
+    color: rgb(14, 14, 15);
 }
 
 .lables_passreg_text {
@@ -212,9 +240,7 @@ hr {
 
 .content {
     text-align: left;
-    width: 620px;
-    padding: 0 0 0 5px;
-    float: left;
+
 }
 
 .content a {
@@ -306,11 +332,17 @@ hr {
     object-fit: cover;
 }
 
+img {
+    width: 620px;
+    padding: 0 0 0 5px;
+    float: left;
+}
+
 /*для серій */
 .menu3 a {
     text-decoration: none;
     font-family: sans-serif;
-    color: blue;
+    color: rgb(23, 23, 24);
     display: inline-block;
     padding: 5px 10px;
     background-color: lavender;
@@ -337,7 +369,7 @@ a:hover {
 
 /*коментарии*/
 .reviews .review_name {
-    background-color: blue;
+    background-color: rgb(102, 102, 197);
     color: white;
     padding: 1%;
     border-top-left-radius: 5px;
