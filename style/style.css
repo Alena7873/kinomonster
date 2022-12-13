@@ -1,49 +1,23 @@
-<style>@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=EB+Garamond:wght@400;600;700&family=Montserrat:wght@400;500;600&display=swap');
-
-</style>body {
-    font-size: 16px;
-    background-color: #fff;
-    color: rgb(28 28 28 / 90%);
+* {
+    margin: 0;
+    padding: 0;
 }
 
-html,
 body {
-    height: 100%;
-
+    font-size: 1.2em;
+    background-color: #fff;
+    color: #555;
 }
 
-a {
-    text-decoration: none;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-    list-style: 0;
-
-}
-
-h1,
-h2,
-h3,
 p {
-    padding: 0;
-    margin: 0;
+    padding: 0 0 20px 0;
+    line-height: 1.7em;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-
-
-/*текст вхід*/
 input[type="text"],
 input[type="password"],
 input[type="search"] {
-    color: #1c1a1a;
+    color: #5d5d5d;
     width: 60%;
     padding: 8px;
 }
@@ -55,25 +29,23 @@ textarea {
     border: solid 1px #f2f2f2;
 }
 
-/*рейтинг фільмів*/
 h1,
 h2 {
     font: normal 170% 'century gothic', arial;
     margin: 0 0 15px 0;
     padding: 15px 0 5px 0;
-    color: rgb(87, 84, 84);
+    color: #000;
 }
 
 h2 {
     font-size: 140%;
 }
 
-/*текст жанри */
 a,
 a:hover {
     outline: none;
     text-decoration: underline;
-    color: #0f1010d9;
+    color: #aeb002;
 }
 
 ul {
@@ -86,10 +58,9 @@ ul li {
     line-height: 1.5em;
 }
 
-/*верх*/
+
 .header {
     background: url(../kar_img/Serze.jpg);
-    height: 220px;
     font-size: 0.8em;
     margin-left: 0px;
     margin-right: 0px;
@@ -100,12 +71,13 @@ ul li {
 .logo,
 .menubar,
 .site_content,
-{
-margin-left: auto;
-margin-right: auto;
+.footer {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo {
+    width: 880px;
     padding-bottom: 40px;
 }
 
@@ -118,21 +90,21 @@ margin-right: auto;
 .logo_text h1,
 .logo_text h1 a,
 .logo_text h1 a:hover {
-    color: #fcfbfbed;
+    padding: 22px 0 0 0;
+    color: #fff;
     letter-spacing: 0.1em;
     text-decoration: none;
 }
 
-/*текст кино наша пристрасть*/
 .logo_text h2 {
     font-size: 0.9em;
     padding: 4px 0 0 0;
-    color: rgb(13, 34, 174)179, 255, 0);
+    color: #999;
 }
 
 .menubar {
-    width: 911px;
-    height: 83px;
+    width: 900px;
+    height: 46px;
 }
 
 ul.menu {
@@ -146,25 +118,20 @@ ul.menu li {
     margin: 1px 2px 0 0;
 }
 
-/*головна фільми*/
 ul.menu li a {
     font: normal 100% 'trebuchet ms', sans-serif;
     display: block;
     height: 20px;
-    padding: 4px 7px 5px 28px;
-    color: rgb(49, 55, 4);
+    padding: 6px 35px 5px 28px;
+    color: #fff;
     text-decoration: none;
 }
 
-.contentFilms ul.menu li.selected a {
-    color: #e4ec04;
+ul.menu li.selected a {
+    color: #aeb002;
 }
 
 ul.menu li a:hover {
-    color: #e4ec04;
-}
-
-.contentFilms a:hover {
     color: #e4ec04;
 }
 
@@ -179,22 +146,9 @@ hr {
     background-color: white;
 }
 
-.before {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700;
-    display: inline-block;
-    content: attr(data-label);
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-    border-bottom: 3px solid #e4ec04;
-    border
-}
-
-/*рейтинг фільмів*/
-
 .sidebar_container {
     float: right;
+    ;
     width: 224px;
 }
 
@@ -215,7 +169,7 @@ hr {
 }
 
 .sidebar h2 {
-    color: rgb(14, 14, 15);
+    color: #136cb2;
 }
 
 .lables_passreg_text {
@@ -240,24 +194,13 @@ hr {
 
 .content {
     text-align: left;
-
+    width: 620px;
+    padding: 0 0 0 5px;
+    float: left;
 }
 
 .content a {
     text-decoration: none;
-}
-
-.contentFilms {
-    text-align: left;
-    width: 620px;
-    padding: 0 0 0 5px;
-    float: left;
-
-}
-
-.Popyl {
-    color: rgb(177, 170, 170);
-    fon
 }
 
 .films_block {
@@ -288,78 +231,19 @@ hr {
 
 .info_film_page .value {
     font-size: 1em;
-    color: #1cf84f;
+    color: #49945A;
     margin-right: 3%;
 }
 
-
-
-.container {
-    display: flex;
-    width: 100%;
-    height: 337px;
-    padding-bottom: 2em;
-    margin-bottom: 4%;
+.descriptions_film {
+    margin-bottom: 15%;
 }
 
-.tru-dni {
+.descriptions_film img {
     float: left;
-    width: 316px;
-    height: 309px;
+    margin-right: 2%;
     border-radius: 5px;
     border: solid 5px #dad7d5;
-    margin-right: 4em;
-
-}
-
-.tru_dni2 {
-    loat: left;
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
-    border: solid 5px #dad7d5;
-    margin-right: 2em;
-}
-
-.img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-img {
-    width: 620px;
-    padding: 0 0 0 5px;
-    float: left;
-}
-
-/*для серій */
-.menu3 a {
-    text-decoration: none;
-    font-family: sans-serif;
-    color: rgb(23, 23, 24);
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: lavender;
-    border-bottom: 5px solid #5757a0;
-}
-
-a:hover {
-    color: #e4ec04;
-}
-
-.menu3 li {
-    display: inline;
-}
-
-/*текст средина*/
-.text-container {
-    color: #333232;
 }
 
 .reviews {
@@ -367,9 +251,8 @@ a:hover {
     font-size: 0.9em;
 }
 
-/*коментарии*/
 .reviews .review_name {
-    background-color: rgb(102, 102, 197);
+    background-color: #7268AD;
     color: white;
     padding: 1%;
     border-top-left-radius: 5px;
@@ -401,9 +284,8 @@ textarea {
     height: 200px;
 }
 
-/*кнопка відправити*/
 .send input[type="submit"] {
-    background-color: blue;
+    background-color: #7268AD;
     padding: 3%;
     color: white;
     border-radius: 5px;
@@ -475,18 +357,6 @@ td img {
     font-weight: bold;
 }
 
-.gerbUa {
-    width: 50px;
-    height: 39px;
-    margin-bottom: -5px;
-}
-
-h3 {
-    cursor: pointer;
-}
-
-/*фильм контент*/
-
 /*footer*/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
@@ -506,7 +376,7 @@ h3 {
 footer {
     position: relative;
     /*относительное позиционирование*/
-    width: 865px;
+    width: 100%;
     /*на всю ширину*/
     padding: 20px 50px;
     /*поля для контента*/
