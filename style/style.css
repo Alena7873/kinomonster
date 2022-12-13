@@ -60,7 +60,8 @@ ul li {
 
 
 .header {
-    background: url(../kar_img/Serze.jpg);
+    background: url(../kar_img/Serze.jpg) no-repeat center center fixed;
+    background-size: cover;
     font-size: 0.8em;
     margin-left: 0px;
     margin-right: 0px;
