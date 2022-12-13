@@ -68,6 +68,22 @@ ul li {
     min-width: 900px;
 }
 
+a :hover {
+    color: blue;
+}
+
+.before {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    content: attr(data-label);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #e4ec04;
+    border
+}
+
 .main,
 .logo,
 .menubar,
@@ -195,9 +211,10 @@ hr {
 
 .content {
     text-align: left;
-    width: 620px;
+    width: 1120px;
     padding: 0 0 0 5px;
     float: left;
+
 }
 
 .content a {
