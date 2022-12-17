@@ -1,88 +1,95 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before::after {
+    box-sizing: inherit;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-size: 1.2em;
+    font-family: 'SFProDisplay-Regular', sans-serif;
+    color: rgb(33, 33, 33);
+    font-size: 24px;
+    line-height: 24px;
     background-color: #fff;
-    color: #555;
+    font-weight: 400px;
+
+
+
+}
+
+.menubar {
+    max-width: 1200 padding: 0 15px;
+    margin: 0 auto;
 }
 
 p {
     padding: 0 0 20px 0;
     line-height: 1.7em;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+
 }
 
-input[type="text"],
-input[type="password"],
-input[type="search"] {
-    color: #5d5d5d;
-    width: 60%;
-    padding: 8px;
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 122px;
+    font-family: 'SFProDisplay-Bold', sans-serif;
+    font-weight: 700;
 }
 
-input,
-textarea {
-    outline: none;
-    border: none;
-    border: solid 1px #f2f2f2;
+.menu__item {
+    display: inline-block;
 }
 
-h1,
-h2 {
-    font: normal 170% 'century gothic', arial;
-    margin: 0 0 15px 0;
-    padding: 15px 0 5px 0;
-    color: #000;
+.header__box {
+    display: flex;
+    justify-content: right;
+    height: 7em;
+    margin: 0;
+    transform: translate(-84px, -35px);
 }
 
-h2 {
-    font-size: 140%;
+.header__uk {
+    margin-right: 56px;
+    position: relative;
+    transform: translate(300px, 30px);
+    color: #e4ec04;
+
 }
 
-a,
-a:hover {
-    outline: none;
-    text-decoration: underline;
-    color: #aeb002;
-}
-
-ul {
-    margin: 2px 0 22px 17px;
-}
-
-ul li {
-    margin: 0 0 6px 0;
-    padding: 0 0 4px 5px;
-    line-height: 1.5em;
-}
-
-
-.header {
-    background: url(../kar_img/Serze.jpg) no-repeat center center fixed;
-    background-size: cover;
-    font-size: 0.8em;
-    margin-left: 0px;
-    margin-right: 0px;
-    min-width: 900px;
-}
-
-a :hover {
+.header__uk:hover {
     color: blue;
 }
 
-.before {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700;
-    display: inline-block;
-    content: attr(data-label);
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-    border-bottom: 3px solid #e4ec04;
-    border
+.header__uk::before {
+    content: "";
+    position: absolute;
+    background-image: url('../img/location1.svg');
+    width: 42px;
+    height: 47px;
+    left: 0;
+    top: -3px;
+
+
+
 }
+
+.menu__item+.menu__item {
+    padding-left: 50px;
+}
+
 
 .main,
 .logo,
@@ -118,6 +125,81 @@ a :hover {
     padding: 4px 0 0 0;
     color: #999;
 }
+
+input[type="text"],
+input[type="password"],
+input[type="search"] {
+    color: #5d5d5d;
+    width: 60%;
+    padding: 8px;
+}
+
+input,
+textarea {
+    outline: none;
+    border: none;
+    border: solid 1px #f2f2f2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font: normal 170% 'century gothic', arial;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+    color: #000;
+}
+
+h2 {
+    font-size: 140%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a,
+a:hover {
+    outline: none;
+    text-decoration: underline;
+    color: #aeb002;
+}
+
+ul {
+    margin: 2px 0 22px 17px;
+}
+
+ul li {
+    margin: 0 0 6px 0;
+    padding: 0 0 4px 5px;
+    line-height: 1.5em;
+}
+
+
+.header {
+    background: url(../kar_img/Serze.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-size: 0.8em;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 900px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+a :hover {
+    color: blue;
+}
+
+
 
 .menubar {
     width: 900px;
@@ -373,6 +455,24 @@ td img {
 
 .rating {
     font-weight: bold;
+}
+
+.img-in {
+    border: solid 5px #dad7d5;
+
+
+}
+
+.posts_content {
+    color: rgb(29, 26, 38);
+}
+
+.posts {
+    color: rgb(29, 26, 38);
+}
+
+.content_nov {
+    color: rgb(39, 41, 68);
 }
 
 /*footer*/
