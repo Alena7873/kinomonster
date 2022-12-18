@@ -34,7 +34,7 @@ body {
     font-family: 'SFUIDisplay-Regular', sans-serif;
     font-size: 24px;
     line-height: 24px;
-    font-weight: 400px;
+
 }
 
 .container {
@@ -54,7 +54,11 @@ body {
 
 .menu__item {
     display: inline-block;
+    transform: translate(19px, -89px);
+
 }
+
+
 
 .menu__item+.menu__item {
     padding-left: 50px;
@@ -66,6 +70,7 @@ body {
     right: 15px;
     top: -31px;
 }
+
 
 .header__box {
     display: flex;
@@ -87,7 +92,7 @@ button {
     font-family: 'SFProDisplay-BoldItalic', sans-serif;
     padding-left: 3px;
     position: relative;
-    transform: translate(858px, -46px);
+    transform: translate(828px, -46px);
     font-size: 18px;
     cursor: pointer;
     border-radius: 6px;
@@ -95,6 +100,7 @@ button {
     background: transparent;
     transition: all 0.3s ease;
     display: inline-block;
+
 
 }
 
@@ -134,7 +140,8 @@ button {
 }
 
 
-/*Контейнер нижняя часть heder*/
+/*Контейнер нижняя часть header*/
+
 .header__bottom {
     margin-bottom: 78px;
 }
@@ -145,6 +152,46 @@ button {
     justify-content: space-around;
     align-items: center;
     min-height: 53px;
+}
+
+.menu-categories__item {
+    position: relative;
+}
+
+.menu-categories__link {
+    transition: all .3s;
+    font-weight: 400;
+    padding: 15px 0 14px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.menu-categories__link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: auto;
+    right: 0;
+    background-color: #1c62cd;
+    height: 3px;
+    bottom: -2px;
+    transition: all .3s;
 
 
+}
+
+.menu-categories__link:hover {
+    font-family: 'SFProDisplay-Semibold', sans-serif;
+    color: rgb(12, 12, 238);
+    border-bottom: 3px solid #1c62cd;
+}
+
+.menu-categories__link:hover::before {
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+
+a:hover {
+    color: yellow;
 }

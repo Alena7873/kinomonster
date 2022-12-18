@@ -168,12 +168,12 @@
 
 @font-face {
     font-family: 'SFProDisplay-Semibold', sans-serif;
-    src: url('SFProDisplay-Semibold.eot');
+    src: url('../fonts/SFProDisplay-Semibold.eot');
     src: local('SF Pro Display Semibold'), local('SFProDisplay-Semibold'),
-        url('SFProDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-Semibold.woff2') format('woff2'),
-        url('SFProDisplay-Semibold.woff') format('woff'),
-        url('SFProDisplay-Semibold.ttf') format('truetype');
+        url('../fonts/SFProDisplay-Semibold.eot') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-SemiboldItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Semibold.woff') format('woff'),
+        url('../fonts/SFProDisplay-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
