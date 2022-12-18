@@ -204,12 +204,12 @@
 
 @font-face {
     font-family: 'SFProDisplay-BoldItalic', sans-serif;
-    src: url('SFProDisplay-BoldItalic.eot');
+    src: url('../fonts/SFProDisplay-BlackItalic.eot');
     src: local('SF Pro Display BoldItalic'), local('SFProDisplay-BoldItalic'),
-        url('SFProDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-BoldItalic.woff2') format('woff2'),
-        url('SFProDisplay-BoldItalic.woff') format('woff'),
-        url('SFProDisplay-BoldItalic.ttf') format('truetype');
+        url('../fonts/SFProDisplay-BlackItalic.eot') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-BlackItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-BlackItalic.woff') format('woff'),
+        url('../fonts/SFProDisplay-BlackItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
