@@ -13,10 +13,13 @@ a {
     color: inherit;
 }
 
+
+
 ul,
 li {
     margin: 0;
     padding: 0;
+    list-style: none;
     text-decoration: none;
 }
 
@@ -29,9 +32,23 @@ h6 {
     margin: 0;
 }
 
+h1,
+h2 {
+    font: normal 170% 'century gothic', arial;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+    color: #000;
+}
+
+h2 {
+    font-size: 140%;
+}
+
 p {
-    padding: 0;
-    margin: 0;
+    p {
+        padding: 0 0 20px 0;
+        line-height: 1.7em;
+    }
 }
 
 body {
@@ -39,6 +56,8 @@ body {
     font-family: 'SFUIDisplay-Regular', sans-serif;
     font-size: 24px;
     line-height: 24px;
+    background-color: #fff;
+    font-weight: 400px;
 
 }
 
@@ -60,6 +79,7 @@ body {
 .menu__item {
     display: inline-block;
     transform: translate(19px, -89px);
+    position: sticky;
 
 }
 
@@ -70,9 +90,8 @@ body {
 }
 
 .logo {
-    width: 830px;
     position: absolute;
-    right: 15px;
+    right: 400px;
     top: -31px;
 }
 
@@ -95,9 +114,8 @@ button {
 
 .header__adress {
     font-family: 'SFProDisplay-BoldItalic', sans-serif;
-    padding-left: 3px;
     position: relative;
-    transform: translate(828px, -46px);
+    transform: translate(600px, -160px);
     font-size: 18px;
     cursor: pointer;
     border-radius: 6px;
@@ -149,6 +167,7 @@ button {
 
 .header__bottom {
     margin-bottom: 78px;
+
 }
 
 .menu-categories {
@@ -157,10 +176,13 @@ button {
     justify-content: space-around;
     align-items: center;
     min-height: 53px;
+
+
 }
 
 .menu-categories__item {
     position: relative;
+
 }
 
 .menu-categories__link {
@@ -169,7 +191,7 @@ button {
     padding: 15px 0 14px;
     position: absolute;
     transform: translate(-50%, -50%);
-    text-decoration: none;
+
 }
 
 .menu-categories__link::before {
@@ -202,7 +224,22 @@ a:hover {
     color: rgb(55, 4, 242);
 }
 
+/**/
+
 /*правая часть пошук*/
+.site_content {
+    width: 880px;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    background-color: white;
+}
+
+.sidebar_container {
+    float: right;
+    ;
+    width: 224px;
+}
+
 .sidebar {
     float: right;
     width: 222px;
@@ -213,13 +250,9 @@ a:hover {
     background-color: #f9f9f9;
 }
 
+
 .sidebar h2 {
     color: #136cb2;
-}
-
-.sidebar ul li {
-    list-style-type: none;
-    margin: 0 0 0 0;
 }
 
 .lables_passreg_text {
@@ -228,14 +261,24 @@ a:hover {
     margin-left: 2%;
 }
 
-.sidebar .rating_sidebar {
-    float: right;
+.sidebar ul {
+    margin: 0;
 }
+
 
 /*правая часть */
 /*текст вхід*/
+.main,
+.logo,
+.menubar,
+.site_content,
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 input[type="text"],
-input[type="password"],
+i nput[type="password"],
 input[type="search"] {
     color: #272826;
     font-style: italic;
@@ -295,6 +338,201 @@ a:hover {
     outline: none;
     color: #0f1010d9;
 
+}
+
+.content {
+    text-align: left;
+    width: 1120px;
+    padding: 0 0 0 5px;
+    float: left;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.films_block {
+    margin-bottom: 5%;
+}
+
+.films_block img {
+    border-radius: 5px;
+    border: solid 5px #dad7d5;
+    width: 22%;
+}
+
+.posts .posts_content {
+    font-size: 0.8em;
+}
+
+* Страница просмотра фильма */ .info_film_page {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.info_film_page .label {
+    font-size: 1.2em;
+}
+
+.info_film_page .value {
+    font-size: 1em;
+    color: #49945A;
+    margin-right: 3%;
+}
+
+.descriptions_film {
+    margin-bottom: 15%;
+}
+
+.descriptions_film img {
+    float: left;
+    margin-right: 2%;
+    border-radius: 5px;
+    border: solid 5px #dad7d5;
+}
+
+.reviews {
+    margin-bottom: 4%;
+    font-size: 0.9em;
+}
+
+.reviews .review_name {
+    background-color: #7268AD;
+    color: white;
+    padding: 1%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.reviews .review_text {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+
+.send {
+    margin-bottom: 4%;
+}
+
+.send input[type="text"],
+textarea {
+    border: solid 1px #C3C3C3;
+    margin-bottom: 2%;
+}
+
+.send input[type="text"] {
+    width: 98%;
+}
+
+.send textarea {
+    width: 624px;
+    height: 200px;
+}
+
+.send input[type="submit"] {
+    background-color: #7268AD;
+    padding: 3%;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+.send_contact input[type="text"] {
+    width: 500px;
+}
+
+.send_contact textarea {
+    width: 516px;
+}
+
+
+
+.info_film {
+    margin-bottom: 5%;
+    background-color: #f9f9f9;
+    padding: 5%;
+    height: 270px;
+}
+
+.info_film img {
+    float: left;
+    margin-right: 2%;
+    border-radius: 5px;
+    border: solid 5px #dad7d5;
+    width: 25%;
+}
+
+.button {
+    background-color: #7268ad;
+    padding: 2%;
+    color: white;
+    border-radius: 5px;
+    float: right;
+    margin-top: 5%;
+    clear: both;
+    font-size: 0.8em;
+}
+
+.button a {
+    color: white;
+}
+
+
+table {
+    width: 100%;
+    border: solid 1px #f4f4f4;
+}
+
+td {
+    padding: 2%;
+    border: solid 1px #f4f4f4;
+}
+
+td img {
+    width: 60px;
+    vertical-align: middle;
+}
+
+.center {
+    text-align: center;
+}
+
+.rating {
+    font-weight: bold;
+}
+
+.img-in {
+    border: solid 5px #dad7d5;
+
+
+}
+
+.posts_content {
+    color: rgb(29, 26, 38);
+}
+
+.posts {
+    color: rgb(29, 26, 38);
+}
+
+.content_nov {
+    color: rgb(39, 41, 68);
+}
+
+/*footer*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    /*обнуление отступов*/
+    padding: 0;
+    /*обнуление полей*/
+    box-sizing: border-box;
+    /*метод расчета размеров бокса*/
+    font-family: 'Poppins', sans-serif;
+    /*название шрифта*/
 }
 
 /*футер*/
