@@ -21,6 +21,8 @@ li {
     padding: 0;
     list-style: none;
     text-decoration: none;
+
+
 }
 
 h1,
@@ -45,27 +47,30 @@ h2 {
 }
 
 p {
-    p {
-        padding: 0 0 20px 0;
-        line-height: 1.7em;
-    }
+
+    padding: 0 0 20px 0;
+    line-height: 1.7em;
+
 }
 
 body {
+    display: flex;
     color: #2f3035;
     font-family: 'SFUIDisplay-Regular', sans-serif;
     font-size: 24px;
     line-height: 24px;
     background-color: #fff;
-    font-weight: 400px;
+    width: 1200px;
 
 }
 
 .container {
-    max-width: 1200;
-    padding: 0 15px;
-    margin: 0 auto;
+    list-style: none;
+    text-align: left;
 }
+
+/*  */
+
 
 .header__top-inner {
     display: flex;
@@ -75,6 +80,8 @@ body {
     font-family: 'SFProDisplay-Bold', sans-serif;
     font-weight: 700;
 }
+
+
 
 .menu__item {
     display: inline-block;
@@ -89,12 +96,17 @@ body {
     padding-left: 50px;
 }
 
-.logo {
-    position: absolute;
-    right: 400px;
-    top: -31px;
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.logo__img {
+    width: 250px;
+    display: block;
+    margin: auto;
+}
 
 .header__box {
     display: flex;
@@ -107,6 +119,15 @@ button {
     outline: none;
 }
 
+.header {
+    background-color: darkslateblue;
+    height: 177px;
+    font-size: 0.8em;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 900px;
+}
+
 .header__box2 {
     display: flex;
 
@@ -115,8 +136,8 @@ button {
 .header__adress {
     font-family: 'SFProDisplay-BoldItalic', sans-serif;
     position: relative;
-    transform: translate(600px, -160px);
-    font-size: 18px;
+    transform: translate(760px, -280px);
+    font-size: 12px;
     cursor: pointer;
     border-radius: 6px;
     padding: 4px 6px;
@@ -167,7 +188,7 @@ button {
 
 .header__bottom {
     margin-bottom: 78px;
-
+    transform: translate(0px, -160px)
 }
 
 .menu-categories {
@@ -228,16 +249,17 @@ a:hover {
 
 /*правая часть пошук*/
 .site_content {
-    width: 880px;
+    width: 1200px;
     overflow: hidden;
     margin: 20px auto 0 auto;
-    background-color: white;
+    background-color: #fff;
+
 }
 
 .sidebar_container {
     float: right;
-    ;
     width: 224px;
+
 }
 
 .sidebar {
@@ -248,6 +270,7 @@ a:hover {
     border: solid 1px #f2f2f2;
     border-radius: 5px;
     background-color: #f9f9f9;
+
 }
 
 
@@ -320,6 +343,7 @@ input:-moz-placeholder {
     margin-left: 2%;
 }
 
+
 /*рейтинг фільмів*/
 h1,
 h2 {
@@ -340,6 +364,7 @@ a:hover {
 
 }
 
+/* Страница просмотра фильма */
 .content {
     text-align: left;
     width: 1120px;
@@ -365,7 +390,7 @@ a:hover {
     font-size: 0.8em;
 }
 
-* Страница просмотра фильма */ .info_film_page {
+.info_film_page {
     margin-top: 2%;
     margin-bottom: 4%;
 }
